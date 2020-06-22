@@ -95,7 +95,17 @@ class Main {
 	Примеры:
 
 	```java
-	Mono<String> toUpperCase(M
+	@ServiceMethod
+	Mono<String> toUpperCase(Mono<String> input);
+	```
+
+- `Fire-and-forget` 
+
+	Примеры:
+
+	```java
+	@ServiceMethod
+	void fire();
 
 
 
@@ -121,5 +131,5 @@ F --> J(run Service Discovery)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzA2NTc4MzUsMjEyNTEyMTQ1NV19
+eyJoaXN0b3J5IjpbMTczMjkzMDcwLDIxMjUxMjE0NTVdfQ==
 -->
