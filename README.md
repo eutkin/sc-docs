@@ -28,13 +28,13 @@ class Main {
 > __Важно!__ Для одного интерфейса может быть только одна реализация в рамках одного Scalecube узла, так как на основе интерфейса генерируется адрес для обращения к API сервиса. 
 
 К интерфейсу, декларирующему API сервиса, предоставляется ряд требований:
-- иметь и`io.scalecube.services.annotations.Service` 
+- иметь аннотацию `io.scalecube.services.annotations.Service` 
 - имеет хотя бы один метод, который:
 	- помечен аннотацией `io.scalecube.services.annotations.ServiceMethod`	
 	- имеет 0...1 аргументов
-	- соответствует одному из способу коммуникации
+	- соответствует одному из вариантов коммуникации
 
-Коммуникационные способы:
+Вариантов коммуникации всего четыре:
 - `Request Channel` – на поток событий получаем ответный поток событий.
 
 	__Тип аргумента__:  `org.reactivestreams.Publisher<T>`, где тип `T`:
@@ -90,7 +90,12 @@ class Main {
 	Flux<ServiceMessage> findById(ServiceMessage input);
 	```
 
+- `Request-Response` 
 	
+	Примеры:
+
+	```java
+	Mono<String> toUpperCase(M
 
 
 
@@ -116,5 +121,5 @@ F --> J(run Service Discovery)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDY3MDMzNzksMjEyNTEyMTQ1NV19
+eyJoaXN0b3J5IjpbLTE3MzA2NTc4MzUsMjEyNTEyMTQ1NV19
 -->
