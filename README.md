@@ -127,12 +127,12 @@ F --> J(run Service Discovery)
 
 ### Service Factory как компонент управления жизненным циклом Scalecube сервисов
 
-В отличие от Spring Framework или других инструментов для управления жизненным циклом 
-сервисов приложения, `Service Factory` управляет только жизненным циклом 
+`ServiceFactory` это компонент Scalecube Services для управления жизненным циклом компонентов Scalecube узла. Но в отличие от, например, `Spring Core` 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTQ5OTU0MjIsMjEyNTEyMTQ1NV19
+eyJoaXN0b3J5IjpbLTIxNDE0Mjg1MDUsLTE1MTQ5OTU0MjIsMj
+EyNTEyMTQ1NV19
 -->
