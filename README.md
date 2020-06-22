@@ -130,12 +130,12 @@ F --> J(run Service Discovery)
 `ServiceFactory` это подсистема Scalecube Services для управления жизненным циклом компонентов Scalecube узла, а так же для получения `Service Definition` и `ServiceInfo` сервисов, которые будут размещены на данном Scalecube узле. 
 
 __Service Definition__ – это интерфейс, декларативно описывающий API пользовательского сервиса.
-__Service Info__ –	 это обертка над экземпляром пользовательского сервиса, которая позволяет модифиц 
+__Service Info__ –	 это обертка над экземпляром пользовательского сервиса, которая позволяет модифицировать некоторые аспекты его использования (обработка ошибок, авторизация и так далее) 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjcwOTY1NzgsLTE1MTQ5OTU0MjIsMj
-EyNTEyMTQ1NV19
+eyJoaXN0b3J5IjpbLTM2MTI4MTU0OSwtMTUxNDk5NTQyMiwyMT
+I1MTIxNDU1XX0=
 -->
