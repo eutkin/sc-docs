@@ -12,11 +12,16 @@ API Scalecube сервиса декларативно описывается ч�
 class Main {
 	@Service
 	interface GreetingService {
-		s
+		@ServiceMethod
+		Mono<String> sayHello();
+	}
 	
-Microservices serviceProvider = //.. initialize
-GreetingService service = serviceProvider.api(GreetingService.class);
-service.sayHello().subscribe(out::println);
+	public static void main(String[] args) {
+		Microservices provider = //.. initialize
+		GreetingService service = provider.api(GreetingService.class);
+		service.sayHello().subscribe(out::println);
+	}
+}
 ```
 Каждый Scalecube узел должен иметь не более одной реализаций на каждый подобный интерфейс. 
 
@@ -110,5 +115,5 @@ F --> J(run Service Discovery)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMzIyMzU1NywyMTI1MTIxNDU1XX0=
+eyJoaXN0b3J5IjpbLTE2ODIzNzQyMzYsMjEyNTEyMTQ1NV19
 -->
