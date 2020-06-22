@@ -9,8 +9,12 @@
 ### Особенности Scalecube сервисов
 API Scalecube сервиса декларативно описывается через java интерфейс. Данный интерфейс в общем случае используется для обращения к сервису:
 ```java
-Microservices seed = //.. initialize
-seed.api(GreetingService.class).sayHello().s
+Microservices serviceProvider = //.. initialize
+GreetingService service = serviceProvider.api(GreetingService.class);
+service.sayHello().subscribe(out::println);
+```
+Каждый Scalecube 
+
 Каждый Scalecube сервис должен реализовывать 
 - Реализовывать интерфейс, который:
 	- помечен аннотацией `io.scalecube.services.annotations.Service` 
@@ -101,5 +105,5 @@ F --> J(run Service Discovery)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODUwNDUxNzMsMjEyNTEyMTQ1NV19
+eyJoaXN0b3J5IjpbLTIwODcyODgxOCwyMTI1MTIxNDU1XX0=
 -->
