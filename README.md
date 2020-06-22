@@ -27,7 +27,7 @@ class Main {
 
 > __Важно!__ Для одного интерфейса может быть только одна реализация в рамках одного Scalecube узла, так как на основе интерфейса генерируется адрес для обращения к API сервиса.
 
-Каждый Scalecube сервис должен реализовывать 
+Каждый Scalecube сервис должен реализовывать как ми
 - Реализовывать интерфейс, который:
 	- помечен аннотацией `io.scalecube.services.annotations.Service` 
 	- имеет хотя бы один метод, который:
@@ -117,5 +117,5 @@ F --> J(run Service Discovery)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMDgxMjA0NCwyMTI1MTIxNDU1XX0=
+eyJoaXN0b3J5IjpbOTk3MzY3MTYsMjEyNTEyMTQ1NV19
 -->
