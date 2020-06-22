@@ -127,12 +127,14 @@ F --> J(run Service Discovery)
 
 ### Service Factory как компонент управления жизненным циклом Scalecube сервисов
 
-`ServiceFactory` это подсистема Scalecube Services для управления жизненным циклом компонентов Scalecube узла, а так же для п
+`ServiceFactory` это подсистема Scalecube Services для управления жизненным циклом компонентов Scalecube узла, а так же для получения `Service Definition` и `ServiceInfo` сервисов, которые будут размещены на данном Scalecube узле. 
+
+__Service Definition__ – это интерфейс, декларативно описывающий API пользовательского сервиса
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk2ODYxNTYyLC0xNTE0OTk1NDIyLDIxMj
-UxMjE0NTVdfQ==
+eyJoaXN0b3J5IjpbLTIwMjczMDk3NTQsLTE1MTQ5OTU0MjIsMj
+EyNTEyMTQ1NV19
 -->
