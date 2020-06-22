@@ -105,7 +105,9 @@ class Main {
 
 	```java
 	@ServiceMethod
-	void fire();
+	void fire(String message);
+	```
+
 
 
 
@@ -131,5 +133,5 @@ F --> J(run Service Discovery)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMjkzMDcwLDIxMjUxMjE0NTVdfQ==
+eyJoaXN0b3J5IjpbNTk1MjU1Mzk0LDIxMjUxMjE0NTVdfQ==
 -->
