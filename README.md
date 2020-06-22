@@ -5,6 +5,8 @@
 Основное назначение любого Scalecube узла заключается в выполнении некоторой логики. 
 За реализацию этой логики выступают Scalecube сервисы – объекты, которые реактивно обрабатывают поступающие данные и соответствуют определенным требованиям. 
 
+### Ограничения 
+
 Требования к Scalecube сервисам:
 - Реализовывать интерфейс, который:
 	- помечен аннотацией `io.scalecube.services.annotations.Service` 
@@ -95,5 +97,5 @@ F --> J(run Service Discovery)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNTEyMTQ1NV19
+eyJoaXN0b3J5IjpbMjEyOTI1NTI0MiwyMTI1MTIxNDU1XX0=
 -->
