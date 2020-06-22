@@ -7,7 +7,7 @@
 За реализацию этой логики выступают Scalecube сервисы – объекты, которые реактивно обрабатывают поступающие данные и соответствуют определенным требованиям. 
 
 ### Особенности Scalecube сервисов
-
+API Scalecube сервиса декларативно описывается через java интерфейс. 
 Каждый Scalecube сервис должен реализовывать 
 - Реализовывать интерфейс, который:
 	- помечен аннотацией `io.scalecube.services.annotations.Service` 
@@ -98,5 +98,5 @@ F --> J(run Service Discovery)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MjA2ODU1MCwyMTI1MTIxNDU1XX0=
+eyJoaXN0b3J5IjpbLTQ3MzA2MDA2NCwyMTI1MTIxNDU1XX0=
 -->
