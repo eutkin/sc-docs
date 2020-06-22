@@ -17,13 +17,15 @@ class Main {
 	}
 	
 	public static void main(String[] args) {
-		Microservices provider = //.. initialize
+		Microservices provider = //.. initialize node and register service
 		GreetingService service = provider.api(GreetingService.class);
 		service.sayHello().subscribe(out::println);
 	}
 }
 ```
-Каждый Scalecube узел должен иметь не более одной реализаций на каждый подобный интерфейс. 
+Каждый Scalecube узел должен размещать не более одной реализации на каждый подобный интерфейс. 
+
+> __Важно!__ Для 
 
 Каждый Scalecube сервис должен реализовывать 
 - Реализовывать интерфейс, который:
@@ -115,5 +117,5 @@ F --> J(run Service Discovery)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODIzNzQyMzYsMjEyNTEyMTQ1NV19
+eyJoaXN0b3J5IjpbMTI3NzA1MDAxOCwyMTI1MTIxNDU1XX0=
 -->
