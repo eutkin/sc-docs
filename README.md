@@ -123,12 +123,15 @@ E -- service info set --> F(register services in Method Registry)
 F --> H(start Gateways)
 F --> J(run Service Discovery)
 ```
+Рисунок 1 – Порядок инициализации Scalecube узла
 
-### Service Factory как компонент управления жизненным циклом Scalecube
+### Service Factory как компонент управления жизненным циклом Scalecube сервисов
+
+В отличие о
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNTk3Mzk1NSwyMTI1MTIxNDU1XX0=
+eyJoaXN0b3J5IjpbLTg0NTc5MjY5NSwyMTI1MTIxNDU1XX0=
 -->
