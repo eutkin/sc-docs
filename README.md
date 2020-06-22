@@ -6,7 +6,7 @@
 Основное назначение любого Scalecube узла заключается в выполнении некоторой логики. 
 За реализацию этой логики выступают Scalecube сервисы – объекты, которые реактивно обрабатывают поступающие данные и соответствуют определенным требованиям. 
 
-### Особенности Scalecube сервисов
+### Описание API Scalecube сервисов
 API Scalecube сервиса декларативно описывается через java интерфейс. Данный интерфейс в общем случае используется для обращения к сервису:
 ```java
 class Main {
@@ -112,6 +112,8 @@ class Main {
 
 
 
+
+
 ## Алгоритм инициализации Scalecube узла
 
 ```mermaid
@@ -133,5 +135,5 @@ F --> J(run Service Discovery)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk1MjU1Mzk0LDIxMjUxMjE0NTVdfQ==
+eyJoaXN0b3J5IjpbNjczNTI4Njg4LDIxMjUxMjE0NTVdfQ==
 -->
