@@ -12,8 +12,12 @@ C --> D(send notification to channel)
 ### Facebook модуль.
 Содержит логику, характерную только для Facebook. 
 Компоненты:
+	- Rest контроллер/Webhook
+	- Обогатитель лидов 
 
+Модуль входные данные получает извне.
+Выходные модуля – общая форма Лида
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY0OTk5MjIzLDY3NDg1Njk2NSwtMTUxND
-k5NTQyMiwyMTI1MTIxNDU1XX0=
+eyJoaXN0b3J5IjpbLTE3MjAwNDQyMDcsNjc0ODU2OTY1LC0xNT
+E0OTk1NDIyLDIxMjUxMjE0NTVdfQ==
 -->
