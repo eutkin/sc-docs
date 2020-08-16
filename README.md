@@ -1,8 +1,10 @@
 ```mermaid
 graph TD;
-Facebook Webhook Controller (receive leads from facebook) --> Enrichment(encrich leads)
+A(receive leads from facebook) --> B(encrich leads)
+B --> C(transform to notification)
+C --> D(send notification to channel)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYwOTA5NjY3LDY3NDg1Njk2NSwtMTUxND
+eyJoaXN0b3J5IjpbLTk3MTE0MTgzLDY3NDg1Njk2NSwtMTUxND
 k5NTQyMiwyMTI1MTIxNDU1XX0=
 -->
