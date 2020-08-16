@@ -18,9 +18,10 @@ C --> D(send notification to channel)
 Facebook Module: 
 ```mermaid
 graph TD;
-A(Rest controller) --
+A(Rest controller) -->|FacebookLead|B(FacebookEnrich)
+B -->|FacebookEnrichedLead|C(FacebookEnrichedLeadConverter)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDMyNjg1MzgsNjc0ODU2OTY1LC0xNT
-E0OTk1NDIyLDIxMjUxMjE0NTVdfQ==
+eyJoaXN0b3J5IjpbMTUwMTMyOTEwNiw2NzQ4NTY5NjUsLTE1MT
+Q5OTU0MjIsMjEyNTEyMTQ1NV19
 -->
