@@ -1,12 +1,13 @@
 # Сервис уведомлений о лидах
-##
+## Общий алгоритм
 ```mermaid
 graph TD;
-A(receive leads from facebook) --> B(encrich leads)
-B --> C(transform to notification)
-C --> D(send notification to channel)
+A(получаем лиды из facebook) --> B(обогащаем лидов)
+B --> C(преобразуем в уведомление)
+C --> D(посылаем уведомление в каналы связи)
 ```
 
+Требования:
 - Поддержка разных источников лидов
 - Поддержка разных каналов для уведомлений
 
@@ -24,7 +25,9 @@ A(Rest controller) -->|FacebookLead|B(FacebookEnrich)
 B -->|FacebookEnrichedLead|C(FacebookEnrichedLeadConverter)
 C -->|Lead|D(output)
 ```
+
+### Телеграм
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NjMzOTIyMSw2NzQ4NTY5NjUsLTE1MT
+eyJoaXN0b3J5IjpbMTg5NTczODUwNSw2NzQ4NTY5NjUsLTE1MT
 Q5OTU0MjIsMjEyNTEyMTQ1NV19
 -->
