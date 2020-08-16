@@ -15,9 +15,12 @@ C --> D(send notification to channel)
 	- Rest контроллер/Webhook
 	- Обогатитель лидов 
 
-Модуль входные данные получает извне.
-Выходные модуля – общая форма Лида
+Facebook Module: 
+```mermaid
+graph TD;
+A(Rest controller) --
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjAwNDQyMDcsNjc0ODU2OTY1LC0xNT
+eyJoaXN0b3J5IjpbLTEwNDMyNjg1MzgsNjc0ODU2OTY1LC0xNT
 E0OTk1NDIyLDIxMjUxMjE0NTVdfQ==
 -->
