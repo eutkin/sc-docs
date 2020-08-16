@@ -1,3 +1,5 @@
+# Сервис уведомлений о лидах
+##
 ```mermaid
 graph TD;
 A(receive leads from facebook) --> B(encrich leads)
@@ -20,8 +22,9 @@ Facebook Module:
 graph TD;
 A(Rest controller) -->|FacebookLead|B(FacebookEnrich)
 B -->|FacebookEnrichedLead|C(FacebookEnrichedLeadConverter)
+C -->|Lead|D(output)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMTMyOTEwNiw2NzQ4NTY5NjUsLTE1MT
+eyJoaXN0b3J5IjpbMTQ4NjMzOTIyMSw2NzQ4NTY5NjUsLTE1MT
 Q5OTU0MjIsMjEyNTEyMTQ1NV19
 -->
