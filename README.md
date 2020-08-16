@@ -26,8 +26,9 @@ B -->|FacebookEnrichedLead|C(FacebookEnrichedLeadConverter)
 C -->|Lead|D(output)
 ```
 
-### Телеграм
+### Telegram модуль
+Содержит логику отправки уведомлений в телеграмм канал.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NTczODUwNSw2NzQ4NTY5NjUsLTE1MT
+eyJoaXN0b3J5IjpbLTgxMjE4OTk5Miw2NzQ4NTY5NjUsLTE1MT
 Q5OTU0MjIsMjEyNTEyMTQ1NV19
 -->
