@@ -1,13 +1,34 @@
-```markdown
+# Сервис уведомлений о лидах
+## Общий алгоритм
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+A(получаем лиды из facebook) --> B(обогащаем лидов)
+B --> C(преобразуем в уведомление)
+C --> D(посылаем уведомление в каналы связи)
 ```
-````
+
+Требования:
+- Поддержка разных источников лидов
+- Поддержка разных каналов для уведомлений
+
+## Модули
+### Facebook модуль.
+Содержит логику, характерную только для Facebook. 
+Компоненты:
+	- Rest контроллер/Webhook
+	- Обогатитель лидов 
+
+Facebook Module: 
+```mermaid
+graph TD;
+A(Rest controller) -->|FacebookLead|B(FacebookEnrich)
+B -->|FacebookEnrichedLead|C(FacebookEnrichedLeadConverter)
+C -->|Lead|D(output)
+```
+
+### Telegram модуль
+Содержит логику отправки уведомлений в телеграмм канал.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEwNzY5OTQ5LC04MTIxODk5OTIsNjc0OD
-U2OTY1LC0xNTE0OTk1NDIyLDIxMjUxMjE0NTVdfQ==
+eyJoaXN0b3J5IjpbLTgxMjE4OTk5MiwtODEyMTg5OTkyLDY3ND
+g1Njk2NSwtMTUxNDk5NTQyMiwyMTI1MTIxNDU1XX0=
 -->
